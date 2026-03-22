@@ -38,7 +38,7 @@ const Header = () => {
     </>
   );
   return (
-    <nav className="pt-10">
+    <nav className="pt-5 lg:pt-10">
       <div className="navbar bg-base-100 rounded-2xl px-7 py-2 lg:py-4">
         <div className="navbar-start">
           {/* Logo */}
@@ -56,7 +56,7 @@ const Header = () => {
 
         {/* DesktopNav */}
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navItems}</ul>
+          <ul className="menu menu-horizontal px-1 space-x-4">{navItems}</ul>
         </div>
         <div className="navbar-end hidden lg:flex gap-3">
           <button className="btn px-8 py-4 rounded-xl bg-transparent hover:bg-[#CAEB66] font-semibold border-2 border-[#DADADA] hover:border-[#CAEB66] hover:outline-none">
@@ -92,7 +92,7 @@ const Header = () => {
           </div>
           <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow top-12 -right-6 items-center"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow top-12 -right-6 items-center space-y-4 py-6"
           >
             {navItems}
           </ul>

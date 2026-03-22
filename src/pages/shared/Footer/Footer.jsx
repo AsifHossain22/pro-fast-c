@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "../../../assets/logo.png";
 import { Link, NavLink } from "react-router";
+import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const navItems = (
@@ -38,7 +40,7 @@ const Footer = () => {
     </>
   );
   return (
-    <footer className="px-27.5 py-20 rounded-4xl bg-[#0b0b0b] text-[#DADADA] text-center">
+    <footer className="py-10 lg:px-27.5 lg:py-20 rounded-4xl bg-[#0b0b0b] text-[#DADADA] text-center">
       {/* Logo */}
       <div className="">
         {/* Logo */}
@@ -54,7 +56,7 @@ const Footer = () => {
         </Link>
       </div>
 
-      <p className="pt-4 w-8/12 mx-auto">
+      <p className="pt-4 w-9/12 lg:w-8/12 mx-auto">
         Enjoy fast, reliable parcel delivery with real-time tracking and zero
         hassle. From personal packages to business shipments — we deliver on
         time, every time.
@@ -63,9 +65,27 @@ const Footer = () => {
       {/* FooterNav */}
       <div className="border-t border-b border-dashed border-[#03464D] my-4 lg:my-8 py-4 lg:py-8">
         {/* Nav */}
-        <div className="inline-flex">
-          <ul className="menu menu-horizontal px-1 footer-nav">{navItems}</ul>
+        <div className="inline-flex flex-wrap">
+          <ul className="menu menu-horizontal justify-center items-center px-1 footer-nav space-x-4">
+            {navItems}
+          </ul>
         </div>
+      </div>
+
+      {/* SocialMedia */}
+      <div>
+        <Link className="p-2.5 rounded-full inline-flex bg-linear-to-r from-[#2489BE] to-[#0575B3] text-black mx-2">
+          <FaLinkedinIn />
+        </Link>
+        <Link className="p-2.5 rounded-full inline-flex bg-base-100 text-black mx-1">
+          <FaXTwitter />
+        </Link>
+        <Link className="p-2.5 rounded-full inline-flex bg-linear-to-r from-[#2489BE] to-[#0575B3] text-base-100 mx-1">
+          <FaFacebookF />
+        </Link>
+        <Link className="p-2.5 rounded-full inline-flex bg-[#FF0000] text-base-100 mx-1">
+          <FaYoutube />
+        </Link>
       </div>
     </footer>
   );
