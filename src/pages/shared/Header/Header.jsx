@@ -48,11 +48,13 @@ const Header = () => {
               alt="Logo"
               className="relative bottom-3 w-7 lg:w-auto"
             />{" "}
-            <span className="text-[#303030] text-xl lg:text-[32px] font-extrabold -ml-3 -lg:ml-4">
+            <span className="text-[#303030] text-xl lg:text-[32px] font-extrabold -ml-3 lg:-ml-4">
               ProFast
             </span>
           </Link>
         </div>
+
+        {/* DesktopNav */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navItems}</ul>
         </div>

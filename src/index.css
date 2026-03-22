@@ -11,11 +11,15 @@ body {
 }
 
 /* NavbarStyle */
-nav ul a {
+nav ul a,
+.footer-nav a {
   font-weight: 600;
   border-radius: 12px;
 }
-nav ul a:hover {
+nav ul a:hover,
+nav ul a.active,
+.footer-nav a:hover,
+.footer-nav a.active {
   background: #caeb66;
   color: #1f1f1f;
 }
