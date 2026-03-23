@@ -11,7 +11,7 @@ const Root = () => {
         <Header />
       </header>
 
-      <main>
+      <main className="max-w-7xl mx-auto px-4 lg:px-0">
         <Outlet />
       </main>
 

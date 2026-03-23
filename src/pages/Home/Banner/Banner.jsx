@@ -1,56 +1,47 @@
 import React from "react";
+import bannerSlider1 from "../../../assets/banner/banner1.png";
+import bannerSlider2 from "../../../assets/banner/banner2.png";
+import bannerSlider3 from "../../../assets/banner/banner3.png";
 
-// import Swiper bundle with all modules installed
-import Swiper from "swiper/bundle";
+// ImportSwiperReactComponents
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
-// import styles bundle
-import "swiper/css/bundle";
+// ImportSwiperStyles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Banner = () => {
-  // init Swiper:
-  const swiper = new Swiper(".swiper", {
-    // Optional parameters
-    direction: "vertical",
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-  });
   return (
-    <section>
-      {/* <!-- Slider main container --> */}
-      <div className="swiper">
-        {/* <!-- Additional required wrapper --> */}
-        <div className="swiper-wrapper">
-          {/* <!-- Slides --> */}
-          <div className="swiper-slide">Slide 1</div>
-          <div className="swiper-slide">Slide 2</div>
-          <div className="swiper-slide">Slide 3</div>
-          ...
-        </div>
-        {/* <!-- If we need pagination --> */}
-        <div className="swiper-pagination"></div>
+    <section className="w-full my-7 lg:my-14">
+      <Swiper
+        modules={[Autoplay]}
+        autoplay={{ delay: 3000 }}
+        loop={true}
+        className="rounded-4xl cursor-grab active:cursor-grabbing"
+      >
+        <SwiperSlide>
+          <img
+            src={bannerSlider1}
+            className="w-full h-full object-contain block"
+          />
+        </SwiperSlide>
 
-        {/* <!-- If we need navigation buttons --> */}
-        <div className="swiper-button-prev"></div>
-        <div className="swiper-button-next"></div>
+        <SwiperSlide>
+          <img
+            src={bannerSlider2}
+            className="w-full h-full object-contain block"
+          />
+        </SwiperSlide>
 
-        {/* <!-- If we need scrollbar --> */}
-        <div className="swiper-scrollbar"></div>
-      </div>
+        <SwiperSlide>
+          <img
+            src={bannerSlider3}
+            className="w-full h-full object-contain block"
+          />
+        </SwiperSlide>
+      </Swiper>
     </section>
   );
 };
