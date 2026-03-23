@@ -58,6 +58,8 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-4">{navItems}</ul>
         </div>
+
+        {/* Buttons */}
         <div className="navbar-end hidden lg:flex gap-3">
           <button className="btn px-8 py-4 rounded-xl bg-transparent hover:bg-[#CAEB66] font-semibold border-2 border-[#DADADA] hover:border-[#CAEB66] hover:outline-none">
             Sign In
@@ -95,6 +97,16 @@ const Header = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow top-12 -right-6 items-center space-y-4 py-6"
           >
             {navItems}
+
+            {/* Buttons */}
+            <div className="flex flex-col lg:hidden gap-3">
+              <button className="btn px-4 lg:px-8 py-2 lg:py-4 rounded-xl bg-transparent hover:bg-[#CAEB66] font-semibold border-2 border-[#DADADA] hover:border-[#CAEB66] outline-none text-sm lg:text-base">
+                Sign In
+              </button>
+              <button className="btn px-4 lg:px-8 py-2 lg:py-4 rounded-xl bg-[#CAEB66] hover:bg-transparent font-semibold border-2 border-[#CAEB66] hover:border-[#DADADA] outline-none text-sm lg:text-base">
+                Be a Rider
+              </button>
+            </div>
           </ul>
         </div>
       </div>

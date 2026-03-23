@@ -74,16 +74,16 @@ const Footer = () => {
 
       {/* SocialMedia */}
       <div>
-        <Link className="p-2.5 rounded-full inline-flex bg-linear-to-r from-[#2489BE] to-[#0575B3] text-black mx-2">
+        <Link className="p-2.5 rounded-full inline-flex bg-linear-to-r from-[#2489BE] to-[#0575B3] text-black mx-1 hover:shadow-sm hover:-translate-y-1 transition-all duration-300">
           <FaLinkedinIn />
         </Link>
-        <Link className="p-2.5 rounded-full inline-flex bg-base-100 text-black mx-1">
+        <Link className="p-2.5 rounded-full inline-flex bg-base-100 text-black mx-1 hover:shadow-sm hover:-translate-y-1 transition-all duration-300">
           <FaXTwitter />
         </Link>
-        <Link className="p-2.5 rounded-full inline-flex bg-linear-to-r from-[#2489BE] to-[#0575B3] text-base-100 mx-1">
+        <Link className="p-2.5 rounded-full inline-flex bg-linear-to-r from-[#2489BE] to-[#0575B3] text-base-100 mx-1 hover:shadow-sm hover:-translate-y-1 transition-all duration-300">
           <FaFacebookF />
         </Link>
-        <Link className="p-2.5 rounded-full inline-flex bg-[#FF0000] text-base-100 mx-1">
+        <Link className="p-2.5 rounded-full inline-flex bg-[#FF0000] text-base-100 mx-1 hover:shadow-sm hover:-translate-y-1 transition-all duration-300">
           <FaYoutube />
         </Link>
       </div>
