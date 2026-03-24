@@ -14,7 +14,7 @@ const WorkProgress = () => {
       </h2>
 
       {/* WorkProgressContainer */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* WorkProgressCard */}
         <div className="bg-[#ffffff70] border-2 border-transparent hover:border-[#caeb66] p-8 rounded-4xl text-center lg:text-left hover:shadow-md hover:-translate-y-1 transition-all duration-300">
           {/* Icon */}
