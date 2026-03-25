@@ -3,6 +3,7 @@ import Banner from "../Banner/Banner";
 import WorkProgress from "../WorkProgress/WorkProgress";
 import Services from "../Services/Services";
 import Clients from "../Clients/Clients";
+import DeliveryProgress from "../DeliveryProgress/DeliveryProgress";
 
 const Home = () => {
   return (
@@ -18,6 +19,9 @@ const Home = () => {
 
       {/* ClientSection */}
       <Clients />
+
+      {/* DeliveryProgressSection */}
+      <DeliveryProgress />
     </>
   );
 };
