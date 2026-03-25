@@ -61,10 +61,10 @@ const Header = () => {
 
         {/* Buttons */}
         <div className="navbar-end hidden lg:flex gap-3">
-          <button className="btn px-8 py-4 rounded-xl bg-transparent hover:bg-[#CAEB66] font-semibold border-2 border-[#DADADA] hover:border-[#CAEB66] hover:outline-none">
+          <button className="btn px-8 py-4 rounded-xl bg-transparent hover:bg-[#CAEB66] font-semibold border-2 border-[#DADADA] hover:border-[#CAEB66] hover:outline-none transition-all duration-300">
             Sign In
           </button>
-          <button className="btn px-8 py-4 rounded-xl bg-[#CAEB66] hover:bg-transparent font-semibold border-2 border-[#CAEB66] hover:border-[#DADADA] hover:outline-none">
+          <button className="btn px-8 py-4 rounded-xl bg-[#CAEB66] hover:bg-transparent font-semibold border-2 border-[#CAEB66] hover:border-[#DADADA] hover:outline-none transition-all duration-300">
             Be a Rider
           </button>
         </div>
