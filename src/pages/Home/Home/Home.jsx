@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../Banner/Banner";
 import WorkProgress from "../WorkProgress/WorkProgress";
 import Services from "../Services/Services";
+import Clients from "../Clients/Clients";
 
 const Home = () => {
   return (
@@ -14,6 +15,9 @@ const Home = () => {
 
       {/* ServiceSection */}
       <Services />
+
+      {/* ClientSection */}
+      <Clients />
     </>
   );
 };
