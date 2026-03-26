@@ -23,3 +23,104 @@ nav ul a.active,
   background: #caeb66;
   color: #1f1f1f;
 }
+
+/* TestimonialStyles */
+.testimonialSwiper {
+  padding: 20px 0;
+}
+
+/* SlideStyles */
+.testimonial-card {
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s ease;
+  transform: scale(0.9);
+  opacity: 0.4;
+  filter: blur(1px);
+}
+
+/* ActiveSlideStyles */
+.swiper-slide-active .testimonial-card {
+  background: #ffffff;
+  transform: scale(1);
+  opacity: 1;
+  filter: blur(0);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* QuoteIconStyles */
+.testimonial-quote {
+  font-size: 36px;
+  color: #d1d5db;
+  margin-bottom: 20px;
+}
+
+/* TextStyles */
+.testimonial-text {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* UserInfoStyles */
+.testimonial-user {
+  border-top: 1px dashed #e5e7eb;
+  padding-top: 16px;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.testimonial-role {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* ButtonStyles */
+.custom-prev,
+.custom-next {
+  background: #ffffff;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background: #84cc16;
+  color: #ffffff;
+}
+
+/* PaginationStyles */
+.custom-pagination {
+  display: inline-flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* DotStyles */
+.custom-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #d1d5db;
+  opacity: 1;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+/* ActiveDotStyles */
+.custom-pagination .swiper-pagination-bullet-active {
+  width: 20px;
+  background: #84cc16;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: fit-content !important;
+}

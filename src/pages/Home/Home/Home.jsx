@@ -5,6 +5,7 @@ import Services from "../Services/Services";
 import Clients from "../Clients/Clients";
 import DeliveryProgress from "../DeliveryProgress/DeliveryProgress";
 import Merchant from "../Merchant/Merchant";
+import Testimonials from "../Testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -26,6 +27,9 @@ const Home = () => {
 
       {/* MerchantSection */}
       <Merchant />
+
+      {/* TestimonialSection */}
+      <Testimonials />
     </>
   );
 };

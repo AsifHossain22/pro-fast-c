@@ -87,6 +87,14 @@ const Footer = () => {
           <FaYoutube />
         </Link>
       </div>
+
+      {/* Copyright */}
+      <div className="mt-7 mx-4 lg:mx-0">
+        <p>
+          Copyright © {new Date().getFullYear()} - All right reserved. Developed
+          by <span className="font-bold text-[#CAEB66]">Hi ASIF</span>
+        </p>
+      </div>
     </footer>
   );
 };
