@@ -124,3 +124,24 @@ nav ul a.active,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   width: fit-content !important;
 }
+
+/* FAQStyles */
+
+/* ActiveTitle */
+.collapse input:checked ~ .collapse-title {
+  color: #03373d;
+  font-weight: 700;
+  border-bottom: 1px dashed #c3dfe2;
+}
+
+/* ActiveContent */
+.collapse input:checked ~ .collapse-content {
+  color: #606060;
+  padding-top: 10px;
+}
+
+/* CardHighlight */
+.collapse:has(input:checked) {
+  background-color: #e6f2f3;
+  border: 1px solid #067a87;
+}

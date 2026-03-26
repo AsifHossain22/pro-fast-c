@@ -6,6 +6,7 @@ import Clients from "../Clients/Clients";
 import DeliveryProgress from "../DeliveryProgress/DeliveryProgress";
 import Merchant from "../Merchant/Merchant";
 import Testimonials from "../Testimonials/Testimonials";
+import FAQ from "../FAQ/FAQ";
 
 const Home = () => {
   return (
@@ -30,6 +31,9 @@ const Home = () => {
 
       {/* TestimonialSection */}
       <Testimonials />
+
+      {/* FAQSection */}
+      <FAQ />
     </>
   );
 };
