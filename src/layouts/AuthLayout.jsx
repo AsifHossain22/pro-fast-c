@@ -7,7 +7,7 @@ const AuthLayout = () => {
   return (
     <main className="relative">
       {/* Logo */}
-      <div className="absolute left-5 top-5">
+      <div className="lg:absolute lg:left-5 lg:top-5 fixed w-full lg:w-auto z-50 backdrop-blur-md lg:backdrop-blur-0 lg:bg-transparent p-5 lg:p-0">
         <Link className="flex mt-4 lg:mt-3 hover:scale-105 transition-transform duration-500">
           <img
             src={logo}
@@ -20,7 +20,7 @@ const AuthLayout = () => {
         </Link>
       </div>
 
-      <div className="flex flex-col-reverse lg:flex-row items-center min-h-screen bg-base-100">
+      <div className="flex flex-col lg:flex-row items-center min-h-screen bg-base-100">
         {/* OutLet */}
         <div className="flex-1 min-h-screen">
           <div>

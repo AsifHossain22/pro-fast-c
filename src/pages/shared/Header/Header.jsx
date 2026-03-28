@@ -61,9 +61,12 @@ const Header = () => {
 
         {/* Buttons */}
         <div className="navbar-end hidden lg:flex gap-3">
-          <button className="btn px-8 py-4 rounded-xl bg-transparent hover:bg-[#CAEB66] font-semibold border-2 border-[#DADADA] hover:border-[#CAEB66] hover:outline-none transition-all duration-300">
-            Sign In
-          </button>
+          <Link
+            to="/login"
+            className="btn px-8 py-4 rounded-xl bg-transparent hover:bg-[#CAEB66] font-semibold border-2 border-[#DADADA] hover:border-[#CAEB66] hover:outline-none transition-all duration-300"
+          >
+            Login
+          </Link>
           <button className="btn px-8 py-4 rounded-xl bg-[#CAEB66] hover:bg-transparent font-semibold border-2 border-[#CAEB66] hover:border-[#DADADA] hover:outline-none transition-all duration-300">
             Be a Rider
           </button>
@@ -100,9 +103,12 @@ const Header = () => {
 
             {/* Buttons */}
             <div className="flex flex-col lg:hidden gap-3">
-              <button className="btn px-4 lg:px-8 py-2 lg:py-4 rounded-xl bg-transparent hover:bg-[#CAEB66] font-semibold border-2 border-[#DADADA] hover:border-[#CAEB66] outline-none text-sm lg:text-base">
-                Sign In
-              </button>
+              <Link
+                to="/login"
+                className="btn px-8 py-4 rounded-xl bg-transparent hover:bg-[#CAEB66] font-semibold border-2 border-[#DADADA] hover:border-[#CAEB66] hover:outline-none transition-all duration-300"
+              >
+                Login
+              </Link>
               <button className="btn px-4 lg:px-8 py-2 lg:py-4 rounded-xl bg-[#CAEB66] hover:bg-transparent font-semibold border-2 border-[#CAEB66] hover:border-[#DADADA] outline-none text-sm lg:text-base">
                 Be a Rider
               </button>
