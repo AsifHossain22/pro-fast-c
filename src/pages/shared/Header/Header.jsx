@@ -26,6 +26,11 @@ const Header = () => {
         </NavLink>
       </li>
       <li>
+        <NavLink to="/send-parcel" className="transition-all duration-300">
+          Send a Parcel
+        </NavLink>
+      </li>
+      <li>
         <NavLink to="/pricing" className="transition-all duration-300">
           Pricing
         </NavLink>
