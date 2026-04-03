@@ -14,7 +14,7 @@ const SendParcel = () => {
 
   const parcelType = watch("type");
 
-  // Dummy cost calculation
+  // DummyCostCalculation
   const calculateCost = (data) => {
     let base = data.type === "document" ? 10 : 20;
     let weightCost = data.weight ? data.weight * 5 : 0;
@@ -65,7 +65,7 @@ const SendParcel = () => {
       </p>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
-        {/* Parcel Info */}
+        {/* ParcelInfo */}
         <div className="card bg-base-100 shadow-md p-6">
           <h2 className="text-xl font-semibold mb-4">Parcel Info</h2>
 
@@ -108,7 +108,7 @@ const SendParcel = () => {
           </div>
         </div>
 
-        {/* Sender Info */}
+        {/* SenderInfo */}
         <div className="card bg-base-100 shadow-md p-6">
           <h2 className="text-xl font-semibold mb-4">Sender Info</h2>
 
@@ -152,7 +152,7 @@ const SendParcel = () => {
           </div>
         </div>
 
-        {/* Receiver Info */}
+        {/* ReceiverInfo */}
         <div className="card bg-base-100 shadow-md p-6">
           <h2 className="text-xl font-semibold mb-4">Receiver Info</h2>
 
