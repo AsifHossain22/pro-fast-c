@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
+// Explaination:
+// This component allows users to input details about a parcel they want to send, including sender and receiver information.
+// It uses react-hook-form for form handling and validation. Upon submission, it calculates the delivery cost based on the parcel type and weight, and shows a confirmation toast with the calculated cost.
+// If the user confirms, it simulates saving the parcel data (currently just logs it to the console) and shows a success toast.
+
 const SendParcel = () => {
   const [calculatedCost, setCalculatedCost] = useState(null);
 
